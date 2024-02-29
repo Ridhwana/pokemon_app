@@ -4,7 +4,6 @@ class PokemonsController < ApplicationController
     begin
       pokemon_list = Pokemons::Api.get(:pokemon)
       ap current_user
-      binding.pry
       @pokemons = Pokemons::EnrichPokemonData.call(pokemon_list, current_user)
     rescue StandardError => e
       # flash[:error] = "There was an error fetching the pokemon data: #{e.message}"
