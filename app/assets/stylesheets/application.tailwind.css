@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input {
+  @apply border-solid border-2 border-gray-600;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 10px 10px 5px #e0dfdf;
+  z-index: 10;
+}
