@@ -54,6 +54,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 6.1.0'
   gem 'pry', '~> 0.14.2'
   gem 'amazing_print', '~> 1.5.0'
+  gem 'guard-rspec', '~> 4.7'
 end
 
 group :development do
