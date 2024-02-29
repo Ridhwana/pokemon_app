@@ -31,7 +31,7 @@ module Pokemons
           name: captured_pokemon&.name,
           notes: captured_pokemon&.notes,
           original_poke_id: poke_id,
-          original_poke_name: poke.name,
+          original_poke_name: pokemon.name,
         }
       end
     end

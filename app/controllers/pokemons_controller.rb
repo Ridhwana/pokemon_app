@@ -2,7 +2,7 @@ class PokemonsController < ApplicationController
   def index
 
     begin
-      pokemon_list = Pokemons::Api.get(:pokemon)
+      pokemon_list = Pokemons::Api.get(:pokemon).results
       ap current_user
       @pokemons = Pokemons::EnrichPokemonData.call(pokemon_list, current_user)
     rescue StandardError => e

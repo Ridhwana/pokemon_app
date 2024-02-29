@@ -2,12 +2,12 @@
 
 <%= @pokemons&.each do |pokemon| %>
   <div>
-    <%= pokemon[:name] %>
+    <%= pokemon[:original_poke_name] %>
 
     <% if pokemon[:captured] %>
       <div>Edit Details </div>
     <% else %>
-      <div>Captured</div>
+      <div>Capture</div>
     <% end %>
   </div>
 
