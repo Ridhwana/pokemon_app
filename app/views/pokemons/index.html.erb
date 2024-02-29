@@ -1,0 +1,14 @@
+<div>Pokemons</div>
+
+<%= @pokemons&.each do |pokemon| %>
+  <div>
+    <%= pokemon[:name] %>
+
+    <% if pokemon[:captured] %>
+      <div>Edit Details </div>
+    <% else %>
+      <div>Captured</div>
+    <% end %>
+  </div>
+
+<% end %>
